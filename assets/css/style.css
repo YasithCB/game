@@ -1,0 +1,28 @@
+
+*{
+    cursor: none;
+}
+
+.cursor{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    transition: all 0.1s ease;
+    z-index: 3;
+}
+
+main {
+    background-image: url("../images/bg.jpg");
+    width: 400vw;
+    height: 100vh;
+    background-repeat: repeat-x;
+    animation: moveRight 6s linear infinite;
+}
+
+/*animation*/
+@keyframes moveRight {
+    100%{
+        transform: translateX(-2500px)
+    }
+}
+/*animation*/
