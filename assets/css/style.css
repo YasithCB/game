@@ -3,6 +3,10 @@
     cursor: none;
 }
 
+body{
+    overflow: hidden;
+}
+
 .cursor{
     position: absolute;
     transform: translate(-50%,-50%);
