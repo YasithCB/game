@@ -20,7 +20,7 @@ main {
     width: 400vw;
     height: 100vh;
     background-repeat: repeat-x;
-    animation: moveRight 6s linear infinite;
+    animation: moveRight 10s linear infinite;
 }
 
 /*animation*/
