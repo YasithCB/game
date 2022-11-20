@@ -18,3 +18,14 @@
     margin: auto;
     width: 20rem;
 }
+
+.loader-dots {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    top: 12rem;
+    bottom: 0;
+    margin: auto;
+    width: 7rem;
+}
