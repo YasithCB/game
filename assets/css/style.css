@@ -1,32 +1,101 @@
-
-*{
-    cursor: none;
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #dedede;
 }
 
-body{
+#container {
+    position: absolute;
+    height: 400px;
+    width: 90%;
+    top: 90px;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid #525252;
+  background-color: white;
+    margin-left: 4%;
     overflow: hidden;
 }
 
-.cursor{
+#plane{
     position: absolute;
-    transform: translate(-50%,-50%);
-    pointer-events: none;
-    transition: all 0.1s ease;
-    z-index: 3;
+    background: url('../images/airplane.png');
+    height: 42px;
+    width: 65px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 20%;
+    left: 15%;
 }
 
-main {
-    background-image: url("../images/bg.jpg");
-    width: 400vw;
-    height: 100vh;
-    background-repeat: repeat-x;
-    animation: moveRight 10s linear infinite;
+.pole {
+    position: absolute;
+    height: 130px;
+    width: 50px;
+    background-image: url(../images/wall.jpeg);
+    right: -50px;
 }
 
-/*animation*/
-@keyframes moveRight {
-    100%{
-        transform: translateX(-2500px)
-    }
+#pole_1 {
+    top: 0;
 }
-/*animation*/
+
+#pole_2 {
+    bottom: 0;
+}
+
+#score_div {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 40px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 10px;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+
+#restart_btn {
+    position: absolute;
+    height: 100px;
+    top: 100px;
+    font-weight: 500;
+    border-radius: 30px;
+    font-family: fantasy;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(198, 12, 12);
+    color: #ffffff;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.detailsText, #score, #speed, .level {
+    font-family: fantasy;
+    color: #2d2d2d;
+}
+
+.levelContainer {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.level {
+    font-size: 29px;
+}

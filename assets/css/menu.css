@@ -21,3 +21,17 @@ main{
 .menu-btn-play:hover{
     scale: 110%;
 }
+
+.menu-btn-play {
+    border: 1px solid #2f2f2f;
+    border-radius: 22px;
+}
+.dev-by {
+    position: absolute;
+    width: 11rem;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0.5rem;
+    margin: auto;
+}
